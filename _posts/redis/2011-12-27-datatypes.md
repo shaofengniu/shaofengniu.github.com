@@ -15,7 +15,7 @@ struct sdshdr {
 };
 {% endhighlight %}
 
-![Redis string](/assets/redis/sds.png)
+![Redis string](/assets/images/redis/sds.png)
 
 Redis String is [binary safe](http://en.wikipedia.org/wiki/Binary-safe), since it uses the
 `len` and `free` fields in `struct sdshdr` to decide the end of the
@@ -57,7 +57,7 @@ payload size is relativly small. The ziplist is basically a dynamic
 array, which improves the memory efficiency at the cost of O(whole
 data size) `LPUSH`/`LPOP`. And a little more CPU will be used to
 decode and encode ziplist entry.
-![Ziplist](/assets/redis/ziplist.png)
+![Ziplist](/assets/images/redis/ziplist.png)
 
 When list contains only integer values or raw-encoded objects no bigger
 than `server.list_max_ziplist_value`, the ziplist will be used to
@@ -103,7 +103,7 @@ ziplist, it implements a zipmap.
 The zipmap structure is basically the same idea with ziplist. It use a
 continuous block of memory to save the key-value pairs.
 
-![zip map](/assets/redis/zipmap.png)
+![zip map](/assets/images/redis/zipmap.png)
 
 The zipmap structure is mainly used by the Hashes commands for a hash
 with a few fields (where few means up to one hundred or so). Otherwise
