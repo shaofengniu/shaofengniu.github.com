@@ -113,7 +113,7 @@ successfully synced with the master.
 
 {% endhighlight %}
 
-![sync](sync.png)
+![sync](/assets/redis/sync.png)
 
 The above graph is about the basic interactions between slave and
 master during the `SYNC` process.
