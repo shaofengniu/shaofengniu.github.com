@@ -1,6 +1,8 @@
 ---
 title: Data Types of Redis
-layout: redis
+layout: post
+tags: ["Redis"]
+
 ---
 
 # Strings #

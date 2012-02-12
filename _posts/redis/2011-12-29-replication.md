@@ -1,6 +1,7 @@
 ---
 title: Replication in Redis
 layout: post
+tags: ["Redis"]
 ---
 
 # Replication #
