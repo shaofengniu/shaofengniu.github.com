@@ -1,6 +1,6 @@
 ---
 title: Replication in Redis
-layout: default
+layout: post
 ---
 
 # Replication #

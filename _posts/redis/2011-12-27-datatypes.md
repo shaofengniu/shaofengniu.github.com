@@ -1,6 +1,6 @@
 ---
-title: Data Types
-layout: default
+title: Data Types of Redis
+layout: redis
 ---
 
 # Strings #
